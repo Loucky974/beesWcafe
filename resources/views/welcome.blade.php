@@ -126,7 +126,7 @@
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="section-header">
-                                <h2 class="pricing-title">Our Menu List In Affordable Pricing</h2>
+                                <h2 class="pricing-title">Our Menu List In Affordable Pricing Sara</h2>
                                 <ul id="filter-list" class="clearfix">
                                     <li class="filter" data-filter="all">All</li>
                                     @foreach($categories as $category)
