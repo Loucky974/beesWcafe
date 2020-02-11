@@ -65,7 +65,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="Food-fair-toggle">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about">about</a></li>
+                <li><a href="#about">about test</a></li>
                 <li><a href="#menu-list">menu list</a></li>
                 <li><a href="#reserve">reservation</a></li>
                 <li><a href="#contact">contact</a></li>
