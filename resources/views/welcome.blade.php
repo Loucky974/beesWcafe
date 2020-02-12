@@ -44,6 +44,8 @@
 
 
 </head>
+
+
 <body data-spy="scroll" data-target="#template-navbar">
 
 <!--== 4. Navigation ==-->
@@ -57,22 +59,36 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            
+
+            <!--==  LOGO ==-->
+
             <a class="navbar-brand" href="#">
                 <img id="logo" src="{{ asset('frontend/images/Logo_main.png') }}" class="logo img-responsive">
             </a>
+
         </div>
+
+
+        <!--== Meunu ==-->
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="Food-fair-toggle">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about">about test</a></li>
-                <li><a href="#menu-list">menu list</a></li>
-                <li><a href="#reserve">reservation</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#menu-list"> la carte </a></li>
+                <li><a href="#promo">Promotions</a></li>
+                <li><a href="#reserve">Commande</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.row -->
 </nav>
+
+
+
+
+
 
 
 <!--== 5. Header ==-->
@@ -91,9 +107,9 @@
 
 
 
-<!--== 6. About us ==-->
+<!--== 6. À propos ==-->
+
 <section id="about" class="about">
-    <img src="{{ asset('frontend/images/icons/about_color.png') }}" class="img-responsive section-icon hidden-sm hidden-xs">
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row dis-table">
@@ -102,12 +118,24 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 dis-table-cell">
                     <div class="section-content">
-                        <h2 class="section-content-title">About us</h2>
+                        <h2 class="section-content-title">À propos</h2>
                         <p class="section-content-para">
-                            Astronomy compels the soul to look upward, and leads us from this world to another.  Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. As we got further and further away, it [the Earth] diminished in size.
+                        Dans l'activité Bees Work « café »,
+                            nous proposons une restauration de type
+                            « Food Tech » (gestion des commandes automatisées).
+                            Ce sera un service complémentaire qui sera en partie
+                            sous-traité avec des acteurs locaux dont c’est le
+                            savoir-faire avec le choix de mettre en avant,
+                            une nourriture guyanaise à tendance équilibré
+                            car, dans le feu de l’action, on a souvent
+                            tendance à oublier de se nourrir sainement.
+
                         </p>
                         <p class="section-content-para">
-                            beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.  Where ignorance lurks, so too do the frontiers of discovery and imagination.
+                        Café – encas – gouter – bar – Tapas
+                            Rien de mieux pour se rencontrer,
+                            finaliser un contrat, fêter un succès que
+                            de partager autour de la table..                        
                         </p>
                     </div> <!-- /.section-content -->
                 </div>
@@ -117,8 +145,19 @@
 </section> <!-- /#about -->
 
 
-<!--==  7. Afordable Pricing  ==-->
+
+
+
+
+
+
+<!--==  7. la carte  ==-->
+<br>
+
 <section id="menu-list" class="menu-list">
+<br>
+<br>
+<br>
     <div id="w">
         <div class="pricing-filter">
             <div class="pricing-filter-wrapper">
@@ -174,12 +213,79 @@
 
 
 
-<!--== 15. Reserve A Table! ==-->
+
+<!--==  7.5 Promotions  ==-->
+<section id="promo" class="promo">
+<br>
+<br>
+<br>
+    <div id="w">
+        <div class="pricing-filter">
+            <div class="pricing-filter-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="section-header">
+                                <h2 class="pricing-title">Our Menu List In Affordable Pricing Sara</h2>
+                                <ul id="filter-list" class="clearfix">
+                                    <li class="filter" data-filter="all">All</li>
+                                    @foreach($categories as $category)
+                                        <li class="filter" data-filter="#{{ $category->slug }}">{{ $category->name }} <span class="badge">{{ $category->items->count() }}</span></li>
+                                    @endforeach
+                                </ul><!-- @end #filter-list -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <ul id="menu-pricing" class="menu-price">
+
+                        @foreach($items as $item)
+                            <li class="item" id="{{ $item->category->slug }}">
+                                <a href="#">
+                                    <img src="{{ asset('uploads/item/'.$item->image) }}" class="img-responsive" alt="Item" style="height: 300px; width: 369px;" >
+                                    <div class="menu-desc text-center">
+                                            <span>
+                                                <h3>{{ $item->name }}</h3>
+                                                {{ $item->description }}
+                                            </span>
+                                    </div>
+                                </a>
+                                <h2 class="white">${{ $item->price }}</h2>
+                            </li>
+                        @endforeach
+                    </ul>
+
+                    <!-- <div class="text-center">
+                            <a id="loadPricingContent" class="btn btn-middle hidden-sm hidden-xs">Load More <span class="caret"></span></a>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+<!--== 15. Passe ta commande ==-->
 <section id="reserve" class="reserve">
-    <img class="img-responsive section-icon hidden-sm hidden-xs" src="{{ asset('frontend/images/icons/reserve_black.png') }}">
+<br>
+<br>
+<br>
     <div class="wrapper">
         <div class="container-fluid">
-            <div class="row dis-table">
+            <div class="row dis-table ">
                 <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
                     <h2 class="section-title">Reserve A Table !</h2>
                 </div>
@@ -194,7 +300,6 @@
 
 
 <section class="reservation">
-    <img class="img-responsive section-icon hidden-sm hidden-xs" src="{{ asset('frontend/images/icons/reserve_color.png') }}">
     <div class="wrapper">
         <div class="container-fluid">
             <div class=" section-content">
@@ -268,6 +373,9 @@
 
 
 <section id="contact" class="contact">
+<br>
+<br>
+<br>
     <div class="container-fluid color-bg">
         <div class="row dis-table">
             <div class="hidden-xs col-sm-6 dis-table-cell">
