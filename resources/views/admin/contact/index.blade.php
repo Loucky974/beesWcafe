@@ -19,7 +19,14 @@
                             <table id="table" class="table"  cellspacing="0" width="100%">
                                 <thead class="text-primary">
                                 <th>ID</th>
-                                <th>Name</th>
+                                <th>Entreprise</th>
+                                <th>Nom</th>
+                                <th>Prenom</th>
+                                <th>Adresse</th>
+                                <th>Code_postal</th>
+                                <th>Ville</th>
+                                <th>Telephone</th>
+                                <th>Email</th>
                                 <th>Subject</th>
                                 <th>Sent At</th>
                                 <th>Action</th>
@@ -28,7 +35,14 @@
                                     @foreach($contacts as $key=>$contact)
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
-                                            <td>{{ $contact->name }}</td>
+                                            <td>{{ $contact->entreprise }}</td>
+                                            <td>{{ $contact->nom }}</td>
+                                            <td>{{ $contact->prenom }}</td>
+                                            <td>{{ $contact->adresse }}</td>
+                                            <td>{{ $contact->code_postal }}</td>
+                                            <td>{{ $contact->ville }}</td>
+                                            <td>{{ $contact->telephone }}</td>
+                                            <td>{{ $contact->email }}</td>
                                             <td>{{ $contact->subject }}</td>
                                             <td>{{ $contact->created_at }}</td>
                                             <td>
