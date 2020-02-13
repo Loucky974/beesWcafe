@@ -417,7 +417,7 @@
                                 <input  name="entreprise" type="text" class="form-control" id="entreprise" required="required" placeholder="  Entreprise">
                             </div>
                             <div class="form-group">
-                                <input  name="name" type="text" class="form-control" id="name" required="required" placeholder="  Name">
+                                <input  name="nom" type="text" class="form-control" id="nom" required="required" placeholder="  Nom">
                             </div>
                             <div class="form-group">
                                 <input  name="prenom" type="text" class="form-control" id="prenom" required="required" placeholder="  Prenom">
