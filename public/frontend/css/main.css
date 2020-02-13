@@ -562,8 +562,13 @@ nav.shrink .navbar-toggle {
     margin-top: 12px;
     font-weight: 600;
 }
+
+
+
+
+
 /*=================================================
-||				16. Contact With us
+||				16. Contactez nous
 ==================================================*/
 
 .contact .section-content
@@ -601,7 +606,7 @@ nav.shrink .navbar-toggle {
 		 -o-transition: all 0.3s ease-in-out;
 }
 
-.fb
+/* .fb
 {
 	background: url(../images/social/facebook_color.png);
 }
@@ -633,7 +638,7 @@ nav.shrink .navbar-toggle {
 
 .link:hover {
 	background: url(../images/social/linkedin_black.png);
-}
+} */
 
 #map-canvas {
     width: 100%;
@@ -644,6 +649,12 @@ nav.shrink .navbar-toggle {
 {
 	padding: 50px 0px;
 }
+
+
+
+
+
+
 /*=================================================
 ||				17. Footer
 ==================================================*/
@@ -821,10 +832,7 @@ footer a:hover
 		font-size: 30px;
 	}
 
-	.navbar-brand 
-	{
-		
-	}
+	
 
 
 	.owl-carousel {
@@ -932,4 +940,7 @@ footer a:hover
 	.btn-reservation {
 		padding: 10px;
 	}
+
+
+
 }
