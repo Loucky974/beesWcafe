@@ -14,7 +14,7 @@
                     @include('layouts.partial.msg')
                     <div class="card">
                         <div class="card-header" data-background-color="purple">
-                            <h4 class="title">Add New Item</h4>
+                            <h4 class="title">Ajouter un nouveau produit </h4>
                         </div>
                         <div class="card-content">
                             <form method="POST" action="{{ route('item.store') }}" enctype="multipart/form-data">
