@@ -64,8 +64,7 @@
             <!--==  LOGO ==-->
 
             <a class="navbar-brand" href="#">
-                <img id="logo" src="{{ asset('frontend/images/Logo_main.png') }}" class="logo img-responsive">
-              <!--==  <img id="logo2" src="{{ asset('frontend/images/Logo_stick.png') }}" class="logo img-responsive"> ==-->
+              <img id="logo2" src="{{ asset('frontend/images/Logo_stick.png') }}" class="logo img-responsive"> 
 
             </a>
 
