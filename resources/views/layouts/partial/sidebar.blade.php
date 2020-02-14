@@ -19,6 +19,12 @@
                     <p>Sliders</p>
                 </a>
             </li>
+            <li class="{{ Request::is('admin/partenaires*') ? 'active': '' }}">
+                <a href="{{ route('partenaires.index') }}">
+                <i class="material-icons">supervised_user_circle</i>
+                    <p>Partenaires</p>
+                </a>
+            </li>
             <li class="{{ Request::is('admin/category*') ? 'active': '' }}">
                 <a href="{{ route('category.index') }}">
                     <i class="material-icons">content_paste</i>

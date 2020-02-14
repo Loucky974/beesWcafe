@@ -11,16 +11,16 @@ class ContactController extends Controller
     public function sendMessage(Request $request)
     {
         $this->validate($request,[
-            'entreprise' => 'required',
-            'nom' => 'required',
-            'prenom' => 'required',
-            'adresse' => 'required',
-            'code_postal' => 'required',
-            'ville' => 'required',
-            'telephone' => 'required',
-            'email' => 'required',
-            'subject' => 'required',
-            'message' => 'required',
+            'entreprise' => 'bail| required',
+            'nom' => 'bail|required|alpha',
+            'prenom' => 'bail|required|alpha ',
+            'adresse' => 'bail|required',
+            'code_postal' => 'bail|required|digits:5',
+            'ville' => 'bail|required',
+            'telephone' => 'bail|required|digits:10',
+            'email' => 'bail|required|email',
+            'subject' => 'bail|required',
+            'message' => 'bail|required',
         ]);
 
         $contact = new Contact();
