@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Dashboard')
+@section('title','Tableau de bord')
 
 @push('css')
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
@@ -16,14 +16,12 @@
                             <i class="material-icons">content_copy</i>
                         </div>
                         <div class="card-content">
-                            <p class="category">Category / Item</p>
+                            <p class="category">Categories / produits</p>
                             <h3 class="title">{{ $categoryCount }}/{{ $itemCount }}
                             </h3>
                         </div>
                         <div class="card-footer">
                             <div class="stats">
-                                <i class="material-icons text-danger">info</i>
-                                <a href="#pablo">Total Categories and Items</a>
                             </div>
                         </div>
                     </div>
@@ -34,12 +32,12 @@
                             <i class="material-icons">slideshow</i>
                         </div>
                         <div class="card-content">
-                            <p class="category">Slider Count</p>
+                            <p class="category">Nombre caroussel</p>
                             <h3 class="title">{{ $sliderCount }}</h3>
                         </div>
                         <div class="card-footer">
                             <div class="stats">
-                                <i class="material-icons">date_range</i> <a href="{{ route('slider.index') }}">Get More Details...</a>
+                                <i class="material-icons">date_range</i> <a href="{{ route('slider.index') }}">plus de détails...</a>
                             </div>
                         </div>
                     </div>
@@ -50,12 +48,11 @@
                             <i class="material-icons">info_outline</i>
                         </div>
                         <div class="card-content">
-                            <p class="category">Reservation</p>
+                            <p class="category">Commandes à confirmés</p>
                             <h3 class="title">{{ $reservations->count() }}</h3>
                         </div>
                         <div class="card-footer">
                             <div class="stats">
-                                <i class="material-icons">local_offer</i> Not Confirmed Reservation
                             </div>
                         </div>
                     </div>
@@ -66,12 +63,11 @@
                             <i class="fa fa-twitter"></i>
                         </div>
                         <div class="card-content">
-                            <p class="category">Contact</p>
+                            <p class="category">Nouveaux messages </p>
                             <h3 class="title">{{ $contactCount }}</h3>
                         </div>
                         <div class="card-footer">
                             <div class="stats">
-                                <i class="material-icons">update</i> Just Updated
                             </div>
                         </div>
                     </div>
@@ -82,7 +78,7 @@
                     @include('layouts.partial.msg')
                     <div class="card">
                         <div class="card-header" data-background-color="purple">
-                            <h4 class="title">Reservations</h4>
+                            <h4 class="title">Commandes</h4>
                         </div>
                         <div class="card-content table-responsive">
                             <table id="table" class="table"  cellspacing="0" width="100%">
@@ -101,9 +97,9 @@
                                         <td>{{ $reservation->phone }}</td>
                                         <th>
                                             @if($reservation->status == true)
-                                                <span class="label label-info">Confirmed</span>
+                                                <span class="label label-info">Confirmé</span>
                                             @else
-                                                <span class="label label-danger">not Confirmed yet</span>
+                                                <span class="label label-danger"> Pas confirmé</span>
                                             @endif
 
                                         </th>

@@ -6,8 +6,6 @@
 |	http://www.jssor.com/demos/image-gallery.html
 |	http://www.jssor.com/development/index.html
 |	http://www.jssor.com/development/define-slides-html-code.html
-|	file:///G:/Technext/Helper/Jssor.Slider.FullPack/demos-no-jquery/introduction-slider.source.html
-|	file:///G:/Technext/Helper/Jssor.Slider.FullPack/demos-no-jquery/image-gallery.source.html
 |	http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html
 |||||||||	Others	|||||||||
 |	Fonts: 1. Roboto[Section-title] 2. Open-Sans[body]
@@ -19,43 +17,47 @@
 ||				Index 
 ==================================================*/
 /*
-|	1. Imports
-|	2. Global
-|	3. Colors
+|	 Imports
+|	 Global
+|	
 |
 |	=============
 |	SECTIONS
 |	=============
-|	4. Navigation
-|	5. Header
-|	6. About us
-|	7. Affordable pricing
-|	8. Great Place to enjoy
-|	9. Our Beer
-|	10. Our Breakfast Menu
-|	11. Our Bread
-|	12. Catagories-1
-|	13. Our Featured Dishes Menu
-|	14. Catagories-2
-|	15. Reserve A Table!
-|	16. Contact With us
-|	17. Footer
+|	 Navigation
+|	 Header
+|	 À propos
+|	 Menu
+|	 Commande ton plat
+|	 Contactez nous
+|	 Footer
+|	 Média Query
 */
 
 
+
 /*=================================================
-||				1. Imports 
+||			    	 Imports 
 ==================================================*/
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,400);
 @import url(http://fonts.googleapis.com/css?family=Raleway:100,400,700);
+
+
+
+
+
+
+
+
 /*=================================================
-||				2. Global 
+||				       TOUS 
 ==================================================*/
 body
 {
 	font-family: 'Raleway', 'Open-Sans', sans-serif;
 	overflow-x: hidden;
 	font-size: 14px;
+	text-align: center;
 }
 
 
@@ -92,14 +94,14 @@ body
 .btn-middle:hover {
 	background-color: rgb(234,170,0);
 	color: #fff;
-	box-shadow: 0px 2px 5px #948E8E;
+	box-shadow: 0px 2px 5px rgb(92, 92, 92);
 }
 
 .btn-send,
 .btn-reservation {
 	background-color: rgb(234,170,0);
 	padding: 10px 50px;
-	box-shadow: 0px 2px 5px #948E8E;
+	box-shadow: 0px 2px 5px rgb(92, 92, 92);
 	color: #fff;
 	margin: 20px 0px;
 }
@@ -193,22 +195,35 @@ input.empty, textarea.empty {
 {
 	margin-top: 50px;
 }*/
+
+
+
+
+
+
+
+
 /*=================================================
-||				3. Colors 
-==================================================*/
-/*=================================================
-||				4. Navigation 
+||				 Navigation 
 ==================================================*/
 .custom-navbar-default
 {
 	background-color: rgb(234,170,0);
 	border: 0px;
-	margin: 0px;
 	border-radius: 0px;
 	color: rgb(234,170,0);
-	padding: 50px 0px;
+	padding-top: 10px;
+	padding-bottom: 0px;
 	box-shadow: 0px 2px 7px #000; /*rgb(139, 195, 74)*/
 }
+
+
+#logo2{
+	margin-top: 40px;
+	height: 55px;
+	width: 800px;
+}
+
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
 {
@@ -278,9 +293,7 @@ input.empty, textarea.empty {
 
 
 
-/*-----------------------------------------------
-		RÉDUCTION DE LA NAV BAR
------------------------------------------------*/
+/*------------------- RÉDUCTION DE LA NAV BAR ----------------------------*/
 
 nav.navbar.shrink {
 	max-height: 62px;
@@ -318,11 +331,11 @@ nav.shrink .navbar-toggle {
 
 
 /*=================================================
-||				5. Header
+||				      Header
 ==================================================*/
 .owl-carousel
 {
-	margin-top: 156px;
+	margin-top: 66px;
 }
 .header-content
 {
@@ -390,16 +403,18 @@ nav.shrink .navbar-toggle {
 
 
 /*=================================================
-||				6. À propos image
+||			       À propos image
 ==================================================*/
 .about-bg
 {
 	background: url('../images/imgapropos.png');
+	margin-top: -1000%;
 	background-repeat: no-repeat;
 	background-size: 70%;
   	background-position-x: 15%;
-  	background-position-y: 80%;
+	background-position-y: 80%;	  
 }
+
 #about 
 {
 	margin-top: 40px;
@@ -410,60 +425,20 @@ nav.shrink .navbar-toggle {
 {
 	margin-left: 0px;
 }
-/*=================================================
-||				7. Affordable pricing
-==================================================*/
-/*=================================================
-||				8. Great Place to enjoy
-==================================================*/
-.great-place-to-enjoy .section-bg
-{
-	background-image: url('../images/GPtE-bg.jpg');
-}
-/*=================================================
-||				9. Our Beer
-==================================================*/
-.beer .section-bg
-{
-	/*background: url('../images/beer-bg1.png'), url('../images/beer-bg2.png');
-	background-position-x: 58%, 80%;
-	background-position-y: 50%, 50%;
-	background-repeat: no-repeat, no-repeat;
-	background-size: 300px,240px;*/
 
-    background: url("../images/beer-bg1.png"), url("../images/beer-bg2.png");
-    background-repeat: no-repeat, no-repeat;
-	
-    background-position: 51% 58%, 75% 58%;
-	
-    background-size: 300px 300px, 240px 240px;
-}
-/*=================================================
-||				10. Our Breakfast Menu
-==================================================*/
-.breakfast .section-bg
-{
-	background-image: url('../images/OBM-bg.jpg');
-}
-/*=================================================
-||				11. Our Bread
-==================================================*/
 
-.bread .section-bg 
+#bw 
 {
-	/*background: url('../images/bread-bg1.png'), url('../images/bread-bg2.png');
-	background-position-x: 58%, 80%;
-	background-position-y: 50%, 50%;
-	background-repeat: no-repeat, no-repeat;
-	background-size: 300px,240px;*/
-
-	background: url("../images/bread-bg1.png"), url("../images/bread-bg2.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: 51% 58%, 75% 58%;
-    background-size: 300px 300px, 240px 240px;
+	font-size: 16px;
+	width: 130%;
+	margin-left:-75px;
+	text-align: center;
 }
+
+
+
 /*=================================================
-||				12. menu
+||				 menu
 ==================================================*/
 .menu 
 {
@@ -502,23 +477,34 @@ nav.shrink .navbar-toggle {
 	margin-bottom: 18px;
 }
 
-
-
-/*=================================================
-||				13. Our Featured Dishes Menu
-==================================================*/
-.featured-dish .section-bg
-{
-	background-image: url('../images/OFDM-bg.jpg');
+.def{
+	font-size: 14px;
 }
-/*=================================================
-||				14. Have a look to our dishes
-==================================================*/
 
 
+
+
+
+
+
 /*=================================================
-||				15. Reserve A Table!
+||				 PASSE TA COMMANDE!
 ==================================================*/
+/* #commande
+{
+	background-color: rgba(234, 172, 0, 0.692);
+	padding-top: 50px;
+	padding-bottom: 60px;
+	margin-top: 100px;
+	font-size: 51px;
+    font-weight: 100;
+	margin-bottom: 27px;
+	color: #fff;
+} */
+.parte{
+	color: #fff;
+}
+
 .reserve .section-bg
 {
 	background-image: url('../images/RaT-bg.jpg');
@@ -563,17 +549,65 @@ nav.shrink .navbar-toggle {
     font-weight: 600;
 }
 
+.wrapper{
+	color: rgb(41, 41, 41);
+}
+
+
+/*=================================================
+||				 Nos partenaires
+==================================================*/
+
+#partenaires{
+	margin-bottom: 100px;
+}
+
+.partes{
+	color: #fff;
+}
 
 
 
 
 /*=================================================
-||				16. Contactez nous
+||				 Infos pratiques
 ==================================================*/
 
+
+.contactes{
+	background-color: rgb(234,170,0);
+	padding-bottom: 100px;
+}
+.titre3{
+	font-size: 30px;
+	margin-top: -10px;
+	color: #fff;
+}
+
+.tel{
+	margin-top: -200px;
+}
+
+.lieu{
+	margin-top: -200px;
+}
+
+.aro{
+	margin-top: -200px;
+}
+
+
+/*=================================================
+||				 Contactez nous
+==================================================*/
+#lieu{
+	margin-bottom: -100px;
+	margin-top: -150px;
+}
 .contact .section-content
 {
 	color: #fff;
+	font-size: 15px;
 }
 .contact .section-title 
 {
@@ -655,8 +689,9 @@ nav.shrink .navbar-toggle {
 
 
 
+
 /*=================================================
-||				17. Footer
+||				 Footer
 ==================================================*/
 
 footer
@@ -681,13 +716,28 @@ footer a:hover
 	color: rgb(234,170,0);
 	text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*=================================================
-||				18. Media Query
+||				 Media Query
 ==================================================*/
 
 
 
-/*=========================   for extra-large screen  =============================*/
+/*-------------------------  pour ecran extra large  -------------------------*/
 
 @media (min-width: 1366px){
 	.section-title
@@ -730,7 +780,7 @@ footer a:hover
 
 
 
-/*------------------------------  for small (tab) screen -------------------------*/
+/*------------------------------  pour petit écran (Tablette) -------------------------*/
 
 @media (max-width: 991px) and (min-width: 768px){
 
@@ -821,7 +871,10 @@ footer a:hover
 
 
 
-/*------------------------------  RESPONSIVE-------------------------*/
+
+
+
+/*------------------------------  pour très petit écran (smartphone)-------------------------*/
 
 @media (max-width: 767px) {
 	.custom-navbar-default {
@@ -941,6 +994,40 @@ footer a:hover
 		padding: 10px;
 	}
 
+	.parte{
+		font-size: 20px;
+		margin-left: 10px;
+	}
 
+	.partes{
+		font-size: 20px;
+		margin-left: -15px;
+	}
+
+	#bw 
+	{
+		margin-left: -40px;
+		font-size: 14px;
+	}
+	
+
+	.item{
+		height: 10px;
+		width: 10px;
+		margin-top: 10px;
+
+	}
+
+	
+	/* .logo {
+		height: 150px;
+		margin-top: 30px;
+		display: none;
+	}
+
+	.logo2{
+		display: none;
+
+	} */
 
 }

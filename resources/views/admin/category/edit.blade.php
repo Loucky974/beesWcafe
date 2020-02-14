@@ -14,7 +14,7 @@
                     @include('layouts.partial.msg')
                     <div class="card">
                         <div class="card-header" data-background-color="purple">
-                            <h4 class="title">Edit Category</h4>
+                            <h4 class="title">Modifier la catégorie</h4>
                         </div>
                         <div class="card-content">
                             <form method="POST" action="{{ route('category.update',$category->id) }}">
@@ -23,14 +23,14 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Name</label>
+                                            <label class="control-label">Nom</label>
                                             <input type="text" class="form-control" name="name" value="{{ $category->name }}">
                                         </div>
                                     </div>
                                 </div>
 
-                                <a href="{{ route('category.index') }}" class="btn btn-danger">Back</a>
-                                <button type="submit" class="btn btn-primary">Save</button>
+                                <a href="{{ route('category.index') }}" class="btn btn-danger">Retour</a>
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
                             </form>
                         </div>
                     </div>
