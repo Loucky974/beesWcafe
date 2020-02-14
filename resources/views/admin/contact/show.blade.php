@@ -18,7 +18,13 @@
                         <div class="card-content">
                            <div class="row">
                                <div class="col-md-12">
-                                   <strong>Name: {{ $contact->name }}</strong><br>
+                                    <strong>Entreprise: {{ $contact->entreprise }}</strong><br>
+                                   <strong>Nom: {{ $contact->nom }}</strong><br>
+                                   <strong>Prenom: {{ $contact->prenom }}</strong><br>
+                                   <strong>Adresse: {{ $contact->adresse }}</strong><br>
+                                   <strong>Code_postal: {{ $contact->code_postal }}</strong><br>
+                                   <strong>Ville: {{ $contact->ville }}</strong><br>
+                                   <strong>Telephone: {{ $contact->telephone }}</strong><br>
                                    <b>Email: {{ $contact->email }}</b> <br>
                                    <strong>Message: </strong><hr>
 
