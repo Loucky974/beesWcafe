@@ -14,7 +14,7 @@
                     @include('layouts.partial.msg')
                     <div class="card">
                         <div class="card-header" data-background-color="purple">
-                            <h4 class="title">Reservations</h4>
+                            <h4 class="title">Commandes</h4>
                         </div>
                         <div class="card-content table-responsive">
                             <table id="table" class="table"  cellspacing="0" width="100%">
@@ -40,9 +40,9 @@
                                             <th>{{ $reservation->message }}</th>
                                             <th>
                                                 @if($reservation->status == true)
-                                                    <span class="label label-info">Confirmed</span>
+                                                    <span class="label label-info">Confirmé</span>
                                                 @else
-                                                    <span class="label label-danger">not Confirmed yet</span>
+                                                    <span class="label label-danger">Pas confirmé</span>
                                                 @endif
 
                                             </th>

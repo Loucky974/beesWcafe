@@ -13,7 +13,7 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header" data-background-color="purple">
-                            <h4 class="title">All Contact Message</h4>
+                            <h4 class="title">Tous les messages</h4>
                         </div>
                         <div class="card-content table-responsive">
                             <table id="table" class="table"  cellspacing="0" width="100%">

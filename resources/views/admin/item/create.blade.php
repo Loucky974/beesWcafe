@@ -22,7 +22,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Category</label>
+                                            <label class="control-label">Categorie</label>
                                             <select class="form-control" name="category">
                                                 @foreach($categories as $category)
                                                     <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -34,7 +34,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Name</label>
+                                            <label class="control-label">Nom</label>
                                             <input type="text" class="form-control" name="name">
                                         </div>
                                     </div>
@@ -50,7 +50,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Price</label>
+                                            <label class="control-label">Prix</label>
                                             <input type="number" class="form-control" name="price">
                                         </div>
                                     </div>
@@ -61,8 +61,8 @@
                                             <input type="file" name="image">
                                     </div>
                                 </div>
-                                <a href="{{ route('item.index') }}" class="btn btn-danger">Back</a>
-                                <button type="submit" class="btn btn-primary">Save</button>
+                                <a href="{{ route('item.index') }}" class="btn btn-danger">Retour</a>
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
                             </form>
                         </div>
                     </div>

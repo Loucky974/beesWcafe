@@ -6,8 +6,6 @@
 |	http://www.jssor.com/demos/image-gallery.html
 |	http://www.jssor.com/development/index.html
 |	http://www.jssor.com/development/define-slides-html-code.html
-|	file:///G:/Technext/Helper/Jssor.Slider.FullPack/demos-no-jquery/introduction-slider.source.html
-|	file:///G:/Technext/Helper/Jssor.Slider.FullPack/demos-no-jquery/image-gallery.source.html
 |	http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html
 |||||||||	Others	|||||||||
 |	Fonts: 1. Roboto[Section-title] 2. Open-Sans[body]
@@ -96,14 +94,14 @@ body
 .btn-middle:hover {
 	background-color: rgb(234,170,0);
 	color: #fff;
-	box-shadow: 0px 2px 5px #948E8E;
+	box-shadow: 0px 2px 5px rgb(92, 92, 92);
 }
 
 .btn-send,
 .btn-reservation {
 	background-color: rgb(234,170,0);
 	padding: 10px 50px;
-	box-shadow: 0px 2px 5px #948E8E;
+	box-shadow: 0px 2px 5px rgb(92, 92, 92);
 	color: #fff;
 	margin: 20px 0px;
 }
@@ -402,11 +400,13 @@ nav.shrink .navbar-toggle {
 .about-bg
 {
 	background: url('../images/imgapropos.png');
+	margin-top: -1000%;
 	background-repeat: no-repeat;
 	background-size: 70%;
   	background-position-x: 15%;
-  	background-position-y: 80%;
+	background-position-y: 80%;	  
 }
+
 #about 
 {
 	margin-top: 40px;
@@ -419,6 +419,13 @@ nav.shrink .navbar-toggle {
 }
 
 
+#bw 
+{
+	font-size: 16px;
+	width: 130%;
+	margin-left:-75px;
+	text-align: center;
+}
 
 
 
@@ -486,6 +493,8 @@ nav.shrink .navbar-toggle {
 	margin-bottom: 27px;
 	color: #fff;
 } */
+
+
 .parte{
 	color: #fff;
 }
@@ -533,6 +542,12 @@ nav.shrink .navbar-toggle {
     margin-top: 12px;
     font-weight: 600;
 }
+
+.wrapper{
+	color: rgb(41, 41, 41);
+}
+
+
 
 
 
@@ -676,12 +691,15 @@ nav.shrink .navbar-toggle {
 ||				 Footer
 ==================================================*/
 
+
+
 footer
 {
 	background-color: rgb(234,170,0);
 	color: #ffffff;
 	padding: 30px 0px;
 }
+
 
 footer a
 {
@@ -978,14 +996,27 @@ footer a:hover
 
 	.parte{
 		font-size: 20px;
-		margin-left: 50px;
+		margin-left: 10px;
 	}
 
 	.partes{
 		font-size: 20px;
-		margin-left: 85px;
+		margin-left: -15px;
 	}
 
+	#bw 
+	{
+		margin-left: -40px;
+		font-size: 14px;
+	}
+	
+
+	.item{
+		height: 10px;
+		width: 10px;
+		margin-top: 10px;
+
+	}
 	/* .logo {
 		height: 150px;
 		margin-top: 30px;

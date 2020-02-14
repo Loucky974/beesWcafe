@@ -14,7 +14,7 @@
                     @include('layouts.partial.msg')
                     <div class="card">
                         <div class="card-header" data-background-color="purple">
-                            <h4 class="title">Login</h4>
+                            <h4 class="title">Connexion</h4>
                         </div>
                         <div class="card-content">
                             <form method="POST" action="{{ route('login') }}">
@@ -30,13 +30,13 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Password</label>
+                                            <label class="control-label">Mot de passe</label>
                                             <input type="password" class="form-control" name="password" required>
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Login</button>
-                                <a href="{{ route('welcome') }}" class="btn btn-danger">Back</a>
+                                <button type="submit" class="btn btn-primary">Connexion</button>
+                                <a href="{{ route('welcome') }}" class="btn btn-danger">Retour</a>
                             </form>
                         </div>
                     </div>

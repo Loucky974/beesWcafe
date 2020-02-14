@@ -32,7 +32,7 @@
 
                                </div>
                            </div>
-                            <a href="{{ route('contact.index') }}" class="btn btn-danger">Back</a>
+                            <a href="{{ route('contact.index') }}" class="btn btn-danger">Retour</a>
                             <div class="clearfix"></div>
                         </div>
                     </div>

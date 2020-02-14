@@ -11,11 +11,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="{{ route('slider.create') }}" class="btn btn-primary">Add New</a>
+                    <a href="{{ route('slider.create') }}" class="btn btn-primary">Ajouter</a>
                     @include('layouts.partial.msg')
                     <div class="card">
                         <div class="card-header" data-background-color="purple">
-                            <h4 class="title">All Slider</h4>
+                            <h4 class="title">Caroussels</h4>
                         </div>
                         <div class="card-content table-responsive">
                             <table id="table" class="table"  cellspacing="0" width="100%">
