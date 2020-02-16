@@ -46,6 +46,12 @@
 </head>
 
 
+
+
+
+
+
+
 <body data-spy="scroll" data-target="#template-navbar">
 
 <!--== 4. Navigation ==-->
@@ -64,7 +70,7 @@
             <!--==  LOGO ==-->
 
             <a class="navbar-brand" href="#">
-              <img id="logo2" src="{{ asset('frontend/images/Logo_stick.png') }}" class="logo img-responsive"> 
+              <img id="logo2" src="{{ asset('frontend/images/Logo_stick.png') }}" alt="logo" class="logo img-responsive"> 
 
             </a>
 
@@ -91,7 +97,7 @@
 
 
 
-<!--== 5. Header ==-->
+<!--==  Header ==-->
 
 <section id="header-slider" class="owl-carousel">
     @foreach($sliders as $key=>$slider)
@@ -109,21 +115,14 @@
 
 
 
-
-
-
-
-
-
-
-
 <!--== 6. À propos ==-->
 
 <section id="about" class="about">
-    <div class="wrapper">
+    <div class="wrappers">
         <div class="container-fluid">
             <div class="row dis-table">
                 <div class="hidden-xs col-sm-6 section-bg about-bg dis-table-cell">
+                <img src="{{ asset('frontend/images/imgapropos.png') }}" id="imgap" class="img1-fluid" alt=" devanture Bees work café" width="450" height="500">
 
                 </div>
                 <div class="col-xs-12 col-sm-6 dis-table-cell">
@@ -143,7 +142,7 @@
                         </p>
                       
 
-                        <p id="bw">
+                        <p id="bw" >
                             Le concept Bees Work Café est d'ailleur né de BEES WORK, une structure
                             innovante en Guyane qui réunit un espace de
                         « Coworking » (espaces de travail partagés, tiers lieux), l'espace
@@ -185,12 +184,7 @@
                                 <h2 class="pricing-title">Notre carte</h2>
 
 
-                                <!--==   <h5 class="def">
-                        Café – encas – gouter – bar – Tapas <br>
-                            Rien de mieux pour se rencontrer, finaliser un contrat,<br>
-                             fêter un succès que de partager autour de la table.. <br>                       
-                            </h5> ==-->
-
+                          
 
                                 <ul id="filter-list" class="clearfix">
                                     <li class="filter" data-filter="all">All</li>
@@ -213,7 +207,7 @@
                         @foreach($items as $item)
                             <li class="item" id="{{ $item->category->slug }}">
                                 <a href="#">
-                                    <img src="{{ asset('uploads/item/'.$item->image) }}" class="img-responsive" alt="Item" style="height: 300px; width: 369px;" >
+                                    <img src="{{ asset('uploads/item/'.$item->image) }}" id="itemm" class="img-responsive" alt="Item" style="height: 300px; width: 369px;" >
                                     <div class="menu-desc text-center">
                                             <span>
                                                 <h3>{{ $item->name }}</h3>
@@ -426,17 +420,17 @@
     (BÂt A) ZAC Hibiscus, 97300 <br>
     Cayenne Guyane Française           
     </p><br>
-    <a href="https://www.google.fr/maps/place/Bees+Work/@4.9355192,-52.3020525,18.25z/data=!4m5!3m4!1s0x8d123b772151917f:0xad9db558dcc608b9!8m2!3d4.9356532!4d-52.3012007?shorturl=1"  target="_blank" >Voir le plan</a>
+    <a href="https://www.google.fr/maps/place/Bees+Work/@4.9355192,-52.3020525,18.25z/data=!4m5!3m4!1s0x8d123b772151917f:0xad9db558dcc608b9!8m2!3d4.9356532!4d-52.3012007?shorturl=1"  target="_blank" class="lien" >Voir le plan</a>
     </div>
 
     <div class="col-sm-6">
     <img src="{{ asset('frontend/images/@.png') }}" id="oui" class="img1-fluid" alt="Sample photo" width="350" height="400">
 
     <div class="aro">
-      <a href="https://www.facebook.com/beesworkcoworking/" target="_blank" >Facebook </a> <br>
-      <a href="https://twitter.com/beesworker" target="_blank" >Twitter</a> <br>
-      <a href="https://www.linkedin.com/in/rachelle-baissi-b23623110/?trk=pub-pbmap" target="_blank" >LinkedIn</a> <br> 
-      <a href="https://www.instagram.com/beeswork/" target="_blank" >Instagram</a><br>
+      <a href="https://www.facebook.com/beesworkcoworking/" target="_blank"  class="lien" >Facebook </a> <br>
+      <a href="https://twitter.com/beesworker" target="_blank" class="lien" >Twitter</a> <br>
+      <a href="https://www.linkedin.com/in/rachelle-baissi-b23623110/?trk=pub-pbmap" target="_blank" class="lien" >LinkedIn</a> <br> 
+      <a href="https://www.instagram.com/beeswork/" target="_blank" class="lien" >Instagram</a><br>
       <br>
        
     </div>
@@ -453,7 +447,7 @@
 
 
 <!--== Contactez nous  ==-->
-
+<h2 class="formcont"> Formulaire de contact </h2>
 
 
 <section class="contact-form">
