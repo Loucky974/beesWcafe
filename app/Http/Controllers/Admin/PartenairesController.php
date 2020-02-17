@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Partenaires;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Carbon\Carbon;
 
 class PartenairesController extends Controller
 {
@@ -14,7 +15,8 @@ class PartenairesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {   
+    {
+       
         $partenaires = Partenaires::all();
         return view('admin.partenaires.index',compact('partenaires'));
     }
@@ -47,12 +49,23 @@ class PartenairesController extends Controller
         if (isset($image))
         {
             $currentDate = Carbon::now()->toDateString();
-            $imagename = $slug .'-'. $currentDate .'-'- uniqid() .'.'. 
-            $image->getClientOriginalExtension();
+            $imagename = $slug .'-'. $currentDate .'-'. uniqid() .'.'. $image->getClientOriginalExtension();
+            if (!file_exists('uploads/partenaires'))
+            {
+                mkdir('uploads/partenaires', 0777 , true);
+            }
+            $image->move('uploads/partenaires',$imagename);
+        }else {
+            $imagename = 'dafault.png';
         }
 
+        $partenaires = new Partenaires();
+        $partenaires->title = $request->title;
+        $partenaires->sub_title = $request->sub_title;
+        $partenaires->image = $imagename;
+        $partenaires->save();
+        return redirect()->route('partenaires.index')->with('successMsg','Partenaires Successfully Saved');
     }
-
 
     /**
      * Display the specified resource.
@@ -73,7 +86,8 @@ class PartenairesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $partenaires = Partenaires::find($id);
+        return view('admin.partenaires.edit',compact('partenaires'));
     }
 
     /**
@@ -85,7 +99,33 @@ class PartenairesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,[
+            'title' => 'required',
+            'sub_title' => 'required',
+            'image' => 'mimes:jpeg,jpg,bmp,png',
+        ]);
+        
+        $image = $request->file('image');
+        $slug = str_slug($request->title);
+        $partenaires = Partenaires::find($id);
+        if (isset($image))
+        {
+            $currentDate = Carbon::now()->toDateString();
+            $imagename = $slug .'-'. $currentDate .'-'. uniqid() .'.'. $image->getClientOriginalExtension();
+            if (!file_exists('uploads/partenaires'))
+            {
+                mkdir('uploads/partenaires', 0777 , true);
+            }
+            $image->move('uploads/partenaires',$imagename);
+        }else {
+            $imagename = $partenaires->image;
+        }
+
+        $partenaires->title = $request->title;
+        $partenaires->sub_title = $request->sub_title;
+        $partenaires->image = $imagename;
+        $partenaires->save();
+        return redirect()->route('partenaires.index')->with('successMsg','Partenaires Successfully Updated');
     }
 
     /**
@@ -96,6 +136,12 @@ class PartenairesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $partenaires = Partenaires::find($id);
+        if (file_exists('uploads/partenaires/'.$partenaires->image))
+        {
+            unlink('uploads/partenaires/'.$partenaires->image);
+        }
+        $partenaires->delete();
+        return redirect()->back()->with('successMsg','Partenaires successfully Deleted');
     }
 }

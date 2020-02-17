@@ -52,6 +52,7 @@
 /*=================================================
 ||				       TOUS 
 ==================================================*/
+
 body
 {
 	font-family: 'Raleway', 'Open-Sans', sans-serif;
@@ -70,12 +71,16 @@ body
   outline: none; 
 }
 
-.btn {
+
+.btn 
+{
   border-radius: 0; 
   letter-spacing: 2px; 
 }
 
-.btn:hover {
+
+.btn:hover 
+{
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -83,28 +88,33 @@ body
 	-o-transition: all 0.3s ease-in-out;
 }
 
-.btn-middle {
+
+.btn-middle 
+{
 	background-color: transparent;
 	padding: 15px 30px;
-	border: 1px solid #8bc34a;
+	border: 1px solid #f0cc2a;
 	color: rgb(234,170,0);
 	margin: 25px 0px;
 }
 
+
 .btn-middle:hover {
 	background-color: rgb(234,170,0);
 	color: #fff;
-	box-shadow: 0px 2px 5px rgb(92, 92, 92);
+	box-shadow: 0px 2px 5px rgb(0, 0, 0);
 }
+
 
 .btn-send,
 .btn-reservation {
 	background-color: rgb(234,170,0);
 	padding: 10px 50px;
-	box-shadow: 0px 2px 5px rgb(92, 92, 92);
+	box-shadow: 0px 2px 5px rgb(0, 0, 0);
 	color: #fff;
 	margin: 20px 0px;
 }
+
 
 .btn-send:hover,
 .btn-reservation:hover {
@@ -113,10 +123,12 @@ body
 
 }
 
+
 .btn-reservation {
 	width: 100%;
 	margin: 0px;
 }
+
 
 .section-title
 {
@@ -129,16 +141,22 @@ body
 	font-size: 60px;
 	color: #fff;
 }
+
+
 .section-content-title
 {
 	font-family: 'Roboto';
 	font-weight: 100;
 	font-size: 60px;
 }
+
+
 .section-content-para
 {
 	margin: 30px 0px;
 }
+
+
 .section-content
 {
 	padding: 15% 25% 15% 20%;
@@ -147,11 +165,15 @@ body
 {
 	width: 100vw;
 }*/
+
+
 .dis-table
 {
 	display: table;
 	/*width: 100vw;*/
 }
+
+
 .dis-table .dis-table-cell
 {
 	display: table-cell;
@@ -160,10 +182,14 @@ body
 	/*width: 50vw;*/
 	/*position: relative;*/
 }
+
+
 .color-bg
 {
 	background: rgb(234,170,0);
 }
+
+
 .section-bg
 {
 	background-size: cover;
@@ -171,17 +197,25 @@ body
     background-position: center;
 }
 
-.form-control {
+
+.form-control 
+{
 	border-radius: 0px;
 	margin-bottom: 25px;
+	border-color: rgb(107, 107, 107);
+
 }
 
-input.empty, textarea.empty {
+
+
+input.empty, textarea.empty 
+{
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
 }
+
 
 .section-icon
 {
@@ -191,10 +225,7 @@ input.empty, textarea.empty {
 	margin-top: 58px;
 	z-index: 999;
 }
-/*.wrapper
-{
-	margin-top: 50px;
-}*/
+
 
 
 
@@ -204,8 +235,9 @@ input.empty, textarea.empty {
 
 
 /*=================================================
-||				 Navigation 
+||			    	 Navigation 
 ==================================================*/
+
 .custom-navbar-default
 {
 	background-color: rgb(234,170,0);
@@ -214,13 +246,14 @@ input.empty, textarea.empty {
 	color: rgb(234,170,0);
 	padding-top: 10px;
 	padding-bottom: 0px;
-	box-shadow: 0px 2px 7px #000; /*rgb(139, 195, 74)*/
+	box-shadow: 0px 2px 7px #000; 
 }
 
 
-#logo2{
+#logo2
+{
 	margin-top: 40px;
-	height: 55px;
+	height: 45px;
 	width: 800px;
 }
 
@@ -229,6 +262,8 @@ input.empty, textarea.empty {
 {
 	color: rgb(234,170,0);
 }
+
+
 .navbar-default .navbar-nav>li>a
 {
 	color: rgb(0, 0, 0);
@@ -256,19 +291,25 @@ input.empty, textarea.empty {
 	border-color: #fff;
 }
 
+
 .navbar-toggle
 {
 	color: #fff;
 	border-radius: 0px;
 }
+
+
 .navbar-default .navbar-toggle .icon-bar
 {
 	background-color: #fff;
 }
+
+
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
 {
 	background-color: transparent;
 }
+
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 	background-color: transparent;
@@ -276,14 +317,11 @@ input.empty, textarea.empty {
 }
 
 
-
-
-/* hauteur logo abeille  */
+/* hauteur logo   */
 .navbar-brand {
 	margin-top: -55px;
   	width: 205px;
 }
-
 
 
 .navbar-default .navbar-collapse {
@@ -293,39 +331,6 @@ input.empty, textarea.empty {
 
 
 
-/*------------------- RÉDUCTION DE LA NAV BAR ----------------------------*/
-
-nav.navbar.shrink {
-	max-height: 62px;
-  	padding: 22px 0px;
-  	transition: all 0.3s ease-in-out;
-  	-webkit-transition: all 0.3s ease-in-out;
-  	-moz-transition: all 0.3s ease-in-out;
-  	-ms-transition: all 0.3s ease-in-out;
-  	-o-transition: all 0.3s ease-in-out;
-}
-
-nav.shrink a {
-	padding-top: 10px !important;
-	padding-bottom: 10px !important;
-	font-size: 15px;
-}
-
-/* logo */
-nav.shrink .navbar-brand {
-	margin-top: -19px;
-}
-
-nav.shrink .navbar-toggle {
-	padding: 4px 5px;
-	margin: 8px 15px 8px 0;
-}
-
-.navbar-default.shrink .navbar-collapse {
-    border-color: transparent;
-}
-
-
 
 
 
@@ -333,21 +338,28 @@ nav.shrink .navbar-toggle {
 /*=================================================
 ||				      Header
 ==================================================*/
+
 .owl-carousel
 {
 	margin-top: 66px;
 }
+
+
 .header-content
 {
 	margin-top: 30vh;
 	display: inline-block;
 }
+
+
 .header-title, .header-sub-title
 {
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
-	color: #333;
+	color: rgb(0, 0, 0);
 }
+
+
 .header-title
 {
 	font-size: 112px;
@@ -355,16 +367,21 @@ nav.shrink .navbar-toggle {
 	margin-bottom: 0px;
 	line-height: 1;
 }
+
+
 .header-sub-title
 {
 	font-size: 16px;
 	margin-left: 10px;
 }
+
+
 .owl-carousel .owl-wrapper, .owl-carousel .owl-item .item
 {
 	height: 80vh;
 	background-repeat: no-repeat;
 }
+
 
 .owl-theme .owl-controls .owl-buttons div
 {
@@ -382,15 +399,21 @@ nav.shrink .navbar-toggle {
 	background: rgb(234,170,0);
 	color: #fff;
 }
+
+
 .owl-theme .owl-controls .owl-buttons div:hover
 {
 	color: #000;
 	background: #fff;
 }
+
+
 .owl-prev
 {
 	right: 25%;
 }
+
+
 .owl-next
 {
 	right: 21%;
@@ -403,11 +426,15 @@ nav.shrink .navbar-toggle {
 
 
 /*=================================================
-||			       À propos image
+||			        À PROPOS
 ==================================================*/
+.wrappers
+{
+	margin-top: -250px;
+	margin-bottom: -100px;
+}
 .about-bg
 {
-	background: url('../images/imgapropos.png');
 	margin-top: -1000%;
 	background-repeat: no-repeat;
 	background-size: 70%;
@@ -415,11 +442,9 @@ nav.shrink .navbar-toggle {
 	background-position-y: 80%;	  
 }
 
-#about 
-{
-	margin-top: 40px;
-	margin-bottom: 50px;
-}
+
+
+
 
 .section-content
 {
@@ -435,15 +460,22 @@ nav.shrink .navbar-toggle {
 	text-align: center;
 }
 
+#imgap
+{
+	margin-top: 400px;
+	margin-bottom: 0px;
+}
 
 
 /*=================================================
-||				 menu
+||			     	LA CARTE
 ==================================================*/
+
 .menu 
 {
     padding: 50px 0px;
 }
+
 
 .menu-catagory h2 
 {
@@ -452,10 +484,12 @@ nav.shrink .navbar-toggle {
     margin-bottom: 27px;
 }
 
+
 .menu-system {
     width: 100%;
     color: rgb(234,170,0);
 }
+
 
 .half 
 {
@@ -463,19 +497,23 @@ nav.shrink .navbar-toggle {
     position: relative;
 }
 
+
 .per-head
 {
     float: left;
 }
 
+
 .per-head span {
     margin-right: 5px;
 }
+
 
 .price {
 	float: right;
 	margin-bottom: 18px;
 }
+
 
 .def{
 	font-size: 14px;
@@ -490,35 +528,29 @@ nav.shrink .navbar-toggle {
 /*=================================================
 ||				 PASSE TA COMMANDE!
 ==================================================*/
-/* #commande
-{
-	background-color: rgba(234, 172, 0, 0.692);
-	padding-top: 50px;
-	padding-bottom: 60px;
-	margin-top: 100px;
-	font-size: 51px;
-    font-weight: 100;
-	margin-bottom: 27px;
-	color: #fff;
-} */
+
 .parte{
 	color: #fff;
 }
+
 
 .reserve .section-bg
 {
 	background-image: url('../images/RaT-bg.jpg');
 }
 
+
 .reservation .section-content
 {
 	padding: 15% 15% 10% 15%;
 }
 
+
 .reservation-form 
 {
 	margin-top: -20px;
 }
+
 
 .opening-time 
 {
@@ -529,6 +561,7 @@ nav.shrink .navbar-toggle {
 	border-radius: 4px;
 }
 
+
 .opening-time-title 
 {
 	margin-top: 0px;
@@ -537,10 +570,12 @@ nav.shrink .navbar-toggle {
 	letter-spacing: 2px;
 }
 
+
 .opening-time p 
 {
     margin-bottom: 2px;
 }
+
 
 .opening-time h4 
 {
@@ -549,22 +584,32 @@ nav.shrink .navbar-toggle {
     font-weight: 600;
 }
 
+
 .wrapper{
 	color: rgb(41, 41, 41);
 }
+
+
+
 
 
 /*=================================================
 ||				 Nos partenaires
 ==================================================*/
 
-#partenaires{
+#partenaires
+{
 	margin-bottom: 100px;
 }
 
-.partes{
+
+.partes
+{
 	color: #fff;
 }
+
+
+
 
 
 
@@ -574,114 +619,88 @@ nav.shrink .navbar-toggle {
 ==================================================*/
 
 
-.contactes{
+.contactes
+{
 	background-color: rgb(234,170,0);
 	padding-bottom: 100px;
 }
-.titre3{
+
+
+.titre3
+{
 	font-size: 30px;
 	margin-top: -10px;
 	color: #fff;
 }
 
-.tel{
+
+.tel
+{
 	margin-top: -200px;
 }
 
-.lieu{
+
+.lieu
+{
 	margin-top: -200px;
 }
 
-.aro{
+
+.aro
+{
 	margin-top: -200px;
 }
+
+
+.lien
+{
+	font-weight: bold;
+}
+
+
 
 
 /*=================================================
 ||				 Contactez nous
 ==================================================*/
-#lieu{
+
+#lieu
+{
 	margin-bottom: -100px;
 	margin-top: -150px;
 }
+
+
 .contact .section-content
 {
 	color: #fff;
 	font-size: 15px;
 }
+
+
 .contact .section-title 
 {
 	padding: 10% 20%;
 }
-.social-media
+
+
+#map-canvas 
 {
-	position: absolute;
-	width: 100%;
-	left: 5%;
-	margin-top: -58px;
-	z-index: 999;
-}
-
-.social-media li
-{
-	display: inline-block;
-	margin-right: 10px;
-}
-
-.fb, .twit, .g-plus, .link
-{
-	float: left;
-	height: 126px;
-	width: 126px;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-		-mz-transition: all 0.3s ease-in-out;
-		-ms-transition: all 0.3s ease-in-out;
-		 -o-transition: all 0.3s ease-in-out;
-}
-
-/* .fb
-{
-	background: url(../images/social/facebook_color.png);
-}
-
-.fb:hover
-{
-	background: url(../images/social/facebook_black.png);
-}
-
-.twit {
-	background: url(../images/social/twitter_color.png);
-}
-
-.twit:hover {
-	background: url(../images/social/twitter_black.png);
-}
-
-.g-plus {
-	background: url(../images/social/g-plus_color.png);
-}
-
-.g-plus:hover {
-	background: url(../images/social/g-plus_black.png);
-}
-
-.link {
-	background: url(../images/social/linkedin_color.png);
-}
-
-.link:hover {
-	background: url(../images/social/linkedin_black.png);
-} */
-
-#map-canvas {
     width: 100%;
     height: 350px;
 }
 
+
 .contact-form
 {
 	padding: 50px 0px;
+	color: black;
+}
+
+
+.formcont
+{
+	margin-top: 50px;
 }
 
 
@@ -701,6 +720,7 @@ footer
 	padding: 30px 0px;
 }
 
+
 footer a
 {
 	color: rgb(234,170,0);
@@ -710,6 +730,7 @@ footer a
 		-ms-transition: all 0.3s ease-in-out;
 		 -o-transition: all 0.3s ease-in-out;
 }
+
 
 footer a:hover
 {
@@ -775,6 +796,9 @@ footer a:hover
 		background-position-x: 62%, 80%;
 		background-size: 330px, 264px;
 	}
+
+
+
 }
 
 
@@ -853,6 +877,12 @@ footer a:hover
 		padding: 10px;
 	}
 
+	.wrappers
+	{
+		margin-top: 250px;
+		margin-bottom: -100px;
+	}
+
 }
 
 
@@ -885,7 +915,10 @@ footer a:hover
 		font-size: 30px;
 	}
 
-	
+	#about
+	{
+		margin-top: 250px;
+	}
 
 
 	.owl-carousel {
@@ -1010,13 +1043,12 @@ footer a:hover
 		font-size: 14px;
 	}
 	
-
-	.item{
-		height: 10px;
-		width: 10px;
-		margin-top: 10px;
-
+/* taille des produits */
+	#itemm
+	{
+		margin-top: -170px;
 	}
+
 
 	
 	/* .logo {
