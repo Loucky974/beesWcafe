@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
+    <link rel="shortcut icon" href="images/star.png" type="favicon/ico"> 
 
     <title>Bees Work Cafe</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
@@ -272,7 +272,7 @@
                         <div class="col-md-10 col-md-offset-1">
                             <div class="section-header">
                             
-                            <h2 class="parte"> Commandez votre plât!</h2>
+                            <h2 class="parte"> Commandez votre plat!</h2>
 
                             </div>
                         </div>
