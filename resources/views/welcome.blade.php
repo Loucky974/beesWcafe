@@ -222,7 +222,7 @@
 
                         @foreach($items as $item)
                             <li class="item" id="{{ $item->category->slug }}">
-                                <a href="#">
+                                <a href="#commande">
                                     <img src="{{ asset('uploads/item/'.$item->image) }}" id="itemm" class="img-responsive" alt="Item" style="height: 300px; width: 369px;" >
                                     <div class="menu-desc text-center">
                                             <span>
