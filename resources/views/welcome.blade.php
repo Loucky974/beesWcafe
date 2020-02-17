@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap-datetimepicker.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <style>
+ 
+
         @foreach($sliders as $key=>$slider)
         
             .owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child({{ $key + 1 }}) .item
@@ -27,8 +29,17 @@
                 background: url({{ asset('uploads/slider/'.$slider->image) }});
                 background-size: cover;
             }
-        @endforeach
+        @endforeach    
+        
+      
+
+       
+
+
     </style>
+  
+
+ 
 
     <script src="{{ asset('frontend/js/jquery-1.11.2.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('frontend/js/jquery.flexslider.min.js') }}"></script>
@@ -83,9 +94,11 @@
         <div class="collapse navbar-collapse" id="Food-fair-toggle">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#about">À propos</a></li>
-                <li><a href="#menu-list"> la carte </a></li>
+                <li><a href="#menu-list"> Carte </a></li>
                 <li><a href="#commande">Commande</a></li>
-                <li><a href="#contactes">contact</a></li>
+                <li><a href="#nospartenaires">Partenaires</a></li>
+                <li><a href="#contactes">Contact</a></li>
+               
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.row -->
@@ -111,6 +124,9 @@
         </div>
     @endforeach
 </section>
+
+
+
 
 
 
@@ -368,7 +384,15 @@
 <!--== Nos partenaires ==-->
 
 
-    <div id="partenaires">
+
+
+
+    <div id="nospartenaires">
+    
+
+
+
+    
         <div class="pricing-filter">
             <div class="pricing-filter-wrapper">
                 <div class="container">
@@ -377,6 +401,15 @@
                             <div class="section-header">
 
                             <h2 class="partes"> Nos partenaires</h2>
+                           
+                            @foreach($partenaires as $partenaires)
+<img src="{{ asset('uploads/partenaires/'.$partenaires->image) }}" alt="{{$partenaires->title}}" width="250" height="150"> <br />
+@endforeach
+
+
+
+
+
 
                             </div>
                         </div>

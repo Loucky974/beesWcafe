@@ -11,7 +11,6 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    @include('layouts.partial.msg')
                     <div class="card">
                         <div class="card-header" data-background-color="purple">
                             <h4 class="title">Ajouter une nouvelle catégorie</h4>
