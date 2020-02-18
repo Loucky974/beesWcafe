@@ -99,8 +99,8 @@ class SliderController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request,[
-            'title' => 'required',
-            'sub_title' => 'required',
+            'title',
+            'sub_title',
             'image' => 'mimes:jpeg,jpg,bmp,png',
         ]);
         $image = $request->file('image');
