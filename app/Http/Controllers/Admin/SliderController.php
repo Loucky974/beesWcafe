@@ -41,7 +41,7 @@ class SliderController extends Controller
         $this->validate($request,[
             'title',
             'sub_title',
-            'image' => 'required|mimes:jpeg,jpg,bmp,png',
+            'image' => 'mimes:jpeg,jpg,bmp,png',
         ]);
         $image = $request->file('image');
         $slug = str_slug($request->title);
