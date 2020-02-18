@@ -20,7 +20,7 @@ class ContactController extends Controller
             'telephone' => 'bail|required|digits:10',
             'email' => 'bail|required|email',
             'subject' => 'bail|required',
-            'message' => 'bail|required|alpha',
+            'message' => 'bail|required|regex:[A-Za-z1-9 ]',
         ]);
 
         $contact = new Contact();
